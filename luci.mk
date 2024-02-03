@@ -62,7 +62,7 @@ PKG_VERSION?=$(if $(DUMP),x,$(strip $(shell \
 			revision="$$(printf 'git-%s.%05d-%s' "$$yday" "$$secs" "$$2")"; \
 		fi; \
 	else \
-		revision="unknown"; \
+		revision="Master"; \
 	fi; \
 	echo "$$revision" \
 )))
